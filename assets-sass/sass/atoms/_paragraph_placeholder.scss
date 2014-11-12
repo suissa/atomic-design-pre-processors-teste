@@ -1,0 +1,32 @@
+// @import '../base/_placeholders';
+// @import '../base/_variables';
+
+$main-color: #7f8c8d;
+
+
+%color-text {
+  color: $main-color
+}
+
+%bold {
+  font-weight: bold
+}
+
+%italic {
+  font-style: italic
+}
+
+.atom-paragraph {
+  @extend %atom-text-default;
+}
+
+%atom-text-default {
+  @extend %bold;
+  @extend %color-text;
+  
+}
+.atom-span {
+  @extend %italic;
+  @extend %color-text;
+  font-weight: 0.8em;
+}

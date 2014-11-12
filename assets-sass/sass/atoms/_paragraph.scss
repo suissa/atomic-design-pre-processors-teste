@@ -1,0 +1,19 @@
+// @import '../base/_placeholders';
+// @import '../base/_variables';
+
+$main-color: #7f8c8d;
+
+
+.color-text {
+  color: $main-color
+}
+
+.bold {
+  font-weight: bold
+}
+
+
+.atom-paragraph {
+  @extend .bold;
+  @extend .color-text;
+}
